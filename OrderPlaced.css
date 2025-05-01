@@ -1,0 +1,88 @@
+/* order-placed-styles.css */
+
+/* General Styling */
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; 
+    color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  /* Order Placed Container */
+  .order-placed-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Success Icon */
+  .success-icon {
+    margin-bottom: 20px;
+  }
+  
+  .checkmark-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #28a745; /* Green background */
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkmark {
+    width: 40px;
+    height: 20px;
+    border-left: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+  
+  /* Heading and Message */
+  h1 {
+    font-size: 24px;
+    color: #ffcc00; /* Highlight color */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #dddddd;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Highlight color */
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e6b800;
+  }
+  

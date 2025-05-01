@@ -1,0 +1,458 @@
+/* index.css       styles.css  */
+
+/* Reset & Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header Section */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1e1e1e; /* Dark navbar background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Highlighted logo color */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00; /* Highlight on hover */
+  }
+  
+  /* Order Now Button */
+  .btn-order-now {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-order-now:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Hamburger Menu (Mobile) */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #1e1e1e;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  
+  /* styles.css */
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 90vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    background:
+      url('https://cdn.pixabay.com/photo/2024/01/15/17/03/ai-generated-8510540_1280.jpg') 
+      no-repeat center center/cover; 
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00; /* Highlighted text */
+    margin-bottom: 20px;
+  }
+  
+  .hero-content h1 span {
+    color: #ffffff; /* "Burger Hut" stays white */
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #dddddd; /* Slightly lighter text */
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .hero-buttons a {
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  /* Primary Button */
+  .btn-primary {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e6b800;
+    color: #000000;
+  }
+  
+  /* Secondary Button */
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .hero-buttons a {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+
+  
+
+  /* Footer Styling */
+.footer {
+  background-color: #121212; /* Dark theme background */
+  color: #ffffff; /* Light text */
+  padding: 50px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Footer Sections */
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 300px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 { /* Added semicolon here */
+  font-size: 20px;
+  color: #ffcc00; /* Highlight color */
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  color: #dddddd;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffcc00; /* Yellow highlight */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #e6b800; /* Slightly darker yellow */
+}
+
+/* Social Media Icons */
+.footer-social .social-icons a {
+  font-size: 30px;
+  margin-right: 15px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+/* Facebook Icon Color */
+.footer-social .social-icons a i.fa-facebook-f {
+  color: #3b5998; /* Facebook's original blue */
+}
+
+/* LinkedIn Icon Color */
+.footer-social .social-icons a i.fa-linkedin {
+  color: #0077b5; /* LinkedIn's original blue */
+}
+
+/* Instagram Icon Color */
+.footer-social .social-icons a i.fa-instagram {
+  color: #e4405f; /* Instagram's original pinkish-red */
+}
+
+/* YouTube Icon Color */
+.footer-social .social-icons a i.fa-youtube {
+  color: #ff0000; /* YouTube's original red */
+}
+
+/* Hover Effects */
+.footer-social .social-icons a:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  color: #e6b800; /* Slightly darker yellow on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  color: #777777;
+}
+
+/* login css */
+/* Login Page Styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+}
+
+.login-card {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.login-card h2 {
+  color: #ffcc00;
+}
+
+.input-group {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+/* Image Slider */
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slider-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigation Buttons */
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design for Slider */
+@media (max-width: 768px) {
+  .image-slider {
+    height: 300px;
+  }
+}
+/* reviws section */
+.reviews {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.review {
+  font-size: 18px;
+  color: #555;
+  margin: 15px 0;
+  font-style: italic;
+}
+
+
+  
+
+  
+
+  

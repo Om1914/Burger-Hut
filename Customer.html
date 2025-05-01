@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Login - Burger Hut</title>
+  <link rel="stylesheet" href="Customer.css">
+</head>
+<body>
+  <div class="login-container">
+    <form action="customer-login.php" method="POST" id="customerLoginForm" class="login-form">
+      <h2>Customer Login</h2>
+      <p>Welcome back! Login to order your favorite burgers.</p>
+      
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password Input -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="login-btn">Login</button>
+
+      <!-- Error Message -->
+      <div id="error-message" class="error-message"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
